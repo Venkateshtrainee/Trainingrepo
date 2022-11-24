@@ -1,0 +1,246 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "User should be able to login to the application",
+        "description": "",
+        "id": "login-feature-file;user-should-be-able-to-login-to-the-application",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 20049792700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is in login page",
+            "match": {
+              "location": "LoginStepDefinitions.user_is_in_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 339970300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enters email id \"prashanthi.skvl@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "prashanthi.skvl@gmail.com",
+                  "offset": 22
+                }
+              ],
+              "location": "LoginStepDefinitions.user_enters_email_id(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 121200800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters password \"Test@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Test@123",
+                  "offset": 22
+                }
+              ],
+              "location": "LoginStepDefinitions.user_enters_password(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8036135100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks the signin button",
+            "match": {
+              "location": "LoginStepDefinitions.user_clicks_the_signin_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1593842300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User should be logged in successfully",
+            "match": {
+              "location": "LoginStepDefinitions.user_should_be_logged_in_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@login"
+          },
+          {
+            "line": 3,
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "User should be able to logout from the application",
+        "description": "",
+        "id": "login-feature-file;user-should-be-able-to-logout-from-the-application",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3109993100,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User clicks the profile button",
+            "match": {
+              "location": "LoginStepDefinitions.user_clicks_the_profile_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 301902900,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User clicks the signout button",
+            "match": {
+              "location": "LoginStepDefinitions.user_clicks_the_signout_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 918575800,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User should be logged out successfully",
+            "match": {
+              "location": "LoginStepDefinitions.user_should_be_logged_out_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 13,
+            "name": "@logout"
+          },
+          {
+            "line": 13,
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "line": 23,
+        "name": "User should not login with invalid credentials",
+        "description": "",
+        "id": "login-feature-file;user-should-not-login-with-invalid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 143746500,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 26,
+                "value": "#Given User is in login page"
+              }
+            ],
+            "line": 27,
+            "name": "User enters email id \"test345678123@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test345678123@gmail.com",
+                  "offset": 22
+                }
+              ],
+              "location": "LoginStepDefinitions.user_enters_email_id(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 109895100,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User enters password \"test@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test@123",
+                  "offset": 22
+                }
+              ],
+              "location": "LoginStepDefinitions.user_enters_password(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 646647400,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User clicks the signin button",
+            "match": {
+              "location": "LoginStepDefinitions.user_clicks_the_signin_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 51296600,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "User should see error message on the screen",
+            "match": {
+              "location": "LoginStepDefinitions.user_should_see_error_message_on_the_screen()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 22,
+            "name": "@invalidlogin"
+          },
+          {
+            "line": 22,
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Login feature file",
+    "description": "",
+    "id": "login-feature-file",
+    "keyword": "Feature",
+    "uri": "LoginFeature.feature"
+  }
+]
